@@ -1,9 +1,12 @@
+:root {
+  --space-unit: 1.15rem ;
+}
 
 body {
   font-family: sans-serif;
   
   display: grid;
-  grid-template-columns: $ 20px 1fr;
+  grid-template-columns: calc(10 * var(--space-unit)) 1fr 1fr;
   grid-template-rows: 100%;
   
   border: solid 3px black ;
@@ -15,10 +18,17 @@ menu {
   grid-column: 1 / 2;
   grid-row: 1 / 2 ;
   outline:1px solid red;
+  border-right: solid 3px black ;
+  
+  margin: 0;
+  padding: var(--space-unit);
 
 }
 
 /* Page structure */
 .wrapper {
-
+  grid-column: 2 / 3;
+  grid-row: 1 / 2 ;
+  
+  border-right: solid 3px black ;
 }
