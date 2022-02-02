@@ -3,14 +3,19 @@ body {
   font-family: sans-serif;
   
   display: grid;
-  grid-template: 
-            "b b a" auto
-            "b b c" 2ch
-            "b b c" 1em / 20% 20px 1fr;
+  grid-template-columns: $ 20px 1fr;
+  grid-template-rows: 100%;
   
   border: solid 3px black ;
-  margin: 0 ;
+  margin: 1px ;
     
+}
+
+menu {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2 ;
+  outline:1px solid red;
+
 }
 
 /* Page structure */
