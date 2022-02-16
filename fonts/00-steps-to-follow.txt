@@ -1,0 +1,10 @@
+
+The implementation of the font on the web should only be done with the @font-face attribute. We deliver the font only in woff format encoded in a css file. 
+
+Steps to follow: 
+
+	1.	Create a font folder at the root of your website. 
+	2.	Link font/myfont.css in your main css file using @import 
+		—> @import url('../font/myfont.css');
+	3.	Call the font using "font-family" in your main css file as it is named inside the font's css file.
+
