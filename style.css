@@ -1,15 +1,15 @@
 :root {
-  --space-unit: 1.2rem ;
-  --leading: 1.2em;
+  --leading: 1.2;
+  --space: 1.2rem ;
 }
 @media screen and (min-width: 1600px) {
   :root {
-    --space-unit: 1.8rem ;
+    --space: 1.8rem ;
   }
 }
 @media screen and (min-width: 2000px) {
   :root {
-    --space-unit: 2.4rem ;
+    --space: 2.4rem ;
   }
 }
 
@@ -28,7 +28,7 @@ body {
   font-weight: 400 ;
   
   display: grid;
-  grid-template-columns: calc(10 * var(--space-unit)) 1fr 1fr;
+  grid-template-columns: calc(10 * var(--space)) 1fr 1fr;
   grid-template-rows: 100%;
   
   border: solid 3px black ;
@@ -81,7 +81,7 @@ menu {
 }
 .logo {
   height: 12.5%;
-  padding: var(--space-unit);
+  padding: var(--space);
 }
 @media screen and (min-width: 2000px) {
   .logo { 
@@ -108,7 +108,7 @@ ul.nav > li {
   flex-basis: auto;
   flex-shrink: 0; 
   
-  padding: var(--space-unit);
+  padding: var(--space);
   list-style-type: none;
   border-top: solid 3px black ;
 }
@@ -135,7 +135,7 @@ ul.nav > li {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   /* grid-template-rows: 100%; */
-  /* column-gap: calc(2 * var(--space-unit)); */
+  /* column-gap: calc(2 * var(--space)); */
 
   overflow-y: scroll;
   
@@ -150,8 +150,8 @@ ul.nav > li {
 
 section:not(.col-12) {
   border-right: solid 3px black ;
-  /* padding-top: var(--space-unit); */
-  /* padding-bottom: var(--space-unit); */
+  /* padding-top: var(--space); */
+  /* padding-bottom: var(--space); */
 }
 
 .divider-h {
@@ -164,7 +164,7 @@ section:not(.col-12) {
 }
 
 .cell-content {
-  padding: var(--space-unit);
+  padding: var(--space);
 
 }
 
@@ -186,41 +186,41 @@ section:not(.col-12) {
 /* typography */
 
 p {
-  margin: var(--space-unit);
+  margin: var(--space);
   max-width: 38em;
 }
 p+p {
-  margin-top: var(--space-unit);
+  margin-top: var(--space);
 }
 
-.header-1 {
+.heading-1 {
   font-family: "diglu-Bold", sans-serif ;
   line-height: var(--leading);
   font-size: 1.5em;
 
   max-width: 25em;
-  margin: var(--space-unit);
+  margin: var(--space);
 }
 @media screen and (min-width: 420px) {
-  .header-1 { 
+  .heading-1 { 
     font-size: 2em; 
     max-width: 19em;
   }
 }
 /* @media screen and (min-width: 900px) {
-.header-1 { font-size: 19px; }
+.heading-1 { font-size: 19px; }
 } */
 @media screen and (min-width: 1200px) {
-.header-1 { 
+.heading-1 { 
 font-size: 2.5em; 
 max-width: 15.2em;
 }
 }
 /* @media screen and (min-width: 1600px) {
-.header-1 { font-size: 21px; }
+.heading-1 { font-size: 21px; }
 } */
 @media screen and (min-width: 2000px) {
-  .header-1 { 
+  .heading-1 { 
     font-size: 3em; 
     max-width: 12.7em;
   }
